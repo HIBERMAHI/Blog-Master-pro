@@ -1,0 +1,200 @@
+body{
+    background: linear-gradient(135deg, #f6f1eb, #f3e7e7, #f2efe9);
+    font-family: 'Poppins', sans-serif;
+    color:#111;
+    overflow-x:hidden;
+}
+
+/* ================= NAVBAR ================= */
+
+.navbar-admin{
+    background: rgba(20, 20, 35, 0.95) !important;
+    backdrop-filter: blur(12px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    padding:16px 0;
+}
+
+.navbar-brand{
+    font-family:'Playfair Display', serif;
+    font-size:1.6rem;
+    letter-spacing:2px;
+    color:#fff !important;
+}
+
+.navbar-nav .nav-link{
+    color:#eaeaea !important;
+    font-weight:500;
+    margin-left:15px;
+    transition:0.3s ease;
+}
+
+.navbar-nav .nav-link:hover{
+    color:#c19a6b !important;
+}
+
+/* ================= PAGE TITLE ================= */
+
+h2{
+    font-family:'Playfair Display', serif;
+    font-size:3rem;
+    text-align:center;
+    margin-bottom:40px;
+}
+
+/* ================= SECTION CARD ================= */
+
+.section-card{
+    background: rgba(255,255,255,0.85);
+    backdrop-filter: blur(10px);
+    border-radius:25px;
+    padding:30px;
+    box-shadow:0 15px 40px rgba(0,0,0,0.06);
+    border:1px solid rgba(0,0,0,0.05);
+    margin-bottom:50px;
+    transition:0.4s ease;
+}
+
+.section-card:hover{
+    transform:translateY(-5px);
+}
+
+/* ================= HEADINGS ================= */
+
+.section-card h3{
+    font-family:'Playfair Display', serif;
+    font-size:1.8rem;
+    margin-bottom:25px;
+}
+
+/* ================= TABLE DESIGN ================= */
+
+.table{
+    border-collapse:separate;
+    border-spacing:0 12px;
+}
+
+/* table rows as cards */
+.table tbody tr{
+    background:white;
+    box-shadow:0 8px 20px rgba(0,0,0,0.05);
+    border-radius:15px;
+    transition:0.4s ease;
+    transform:translateX(0);
+}
+
+/* hover animation (translate + lift) */
+.table tbody tr:hover{
+    transform:translateX(10px);
+    box-shadow:0 15px 30px rgba(0,0,0,0.12);
+}
+
+/* table cells */
+.table td, .table th{
+    padding:18px 20px;
+    vertical-align:middle;
+}
+
+/* remove default borders */
+.table td, .table th{
+    border:none !important;
+}
+
+/* ================= BADGES ================= */
+
+.badge{
+    padding:8px 14px;
+    border-radius:50px;
+    font-weight:500;
+}
+
+/* ================= BUTTONS ================= */
+
+.btn{
+    border-radius:50px !important;
+    font-weight:500;
+    transition:0.3s ease;
+    padding:8px 16px;
+}
+
+.btn:hover{
+    transform:translateY(-3px);
+}
+
+/* approve */
+.btn-success{
+    background:#2ecc71 !important;
+    border:none !important;
+}
+
+/* reject */
+.btn-warning{
+    background:#f39c12 !important;
+    border:none !important;
+}
+
+/* delete */
+.btn-danger{
+    background:#e74c3c !important;
+    border:none !important;
+}
+
+/* outline */
+.btn-outline-danger:hover{
+    background:#e74c3c !important;
+    color:white !important;
+}
+
+/* ================= ALERTS ================= */
+
+.alert{
+    border-radius:15px;
+    border:none;
+    box-shadow:0 10px 25px rgba(0,0,0,0.05);
+}
+
+/* ================= TABLE HEADER ================= */
+
+thead.table-light{
+    background:#f5f1ec !important;
+    font-weight:600;
+}
+
+/* ================= ANIMATIONS ================= */
+
+.section-card{
+    animation:fadeIn 0.6s ease-in-out;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity:0;
+        transform:translateY(20px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:768px){
+
+    h2{
+        font-size:2.2rem;
+    }
+
+    .section-card{
+        padding:20px;
+    }
+
+    .table tbody tr{
+        display:block;
+        margin-bottom:15px;
+    }
+
+    .table td{
+        display:block;
+        text-align:left;
+    }
+}

@@ -1,0 +1,34 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  title Login
+  // Font Awesome CDN
+  link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css')
+  link(rel='stylesheet' href='/css/login.css')
+.container
+  .form-box
+    // Welcome Text
+    .welcome-text
+      h2
+        i.fas.fa-hand-wave
+        |  Welcome Back
+      p We&rsquo;re happy to see you again. Login to continue managing your system smoothly.
+    form(action='/login' method='POST')
+      // Email
+      .input-box
+        label Email
+        .input-icon
+          i.fas.fa-envelope
+          input(type='email' name='email' placeholder='Enter email' required='')
+      // Password
+      .input-box
+        label Password
+        .input-icon
+          i.fas.fa-lock
+          input(type='password' name='password' placeholder='Enter password' required='')
+      button(type='submit')
+        i.fas.fa-right-to-bracket
+        |  Login
+    p
+      | Don&apos;t have an account? 
+      a(href='/register') Register

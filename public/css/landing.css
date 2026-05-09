@@ -1,0 +1,184 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Inter', sans-serif;
+    background:#0f172a;
+    overflow:hidden;
+}
+
+/* ================= HERO SECTION ================= */
+
+.hero{
+    width:100%;
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    padding:30px 8%;
+    position:relative;
+    overflow:hidden;
+}
+
+/* ================= BACKGROUND GLOW ================= */
+
+.hero::before{
+    content:"";
+    position:absolute;
+    width:500px;
+    height:500px;
+    background:#8b5cf6;
+    filter:blur(180px);
+    opacity:0.4;
+    border-radius:50%;
+    top:-150px;
+    left:-120px;
+}
+
+.hero::after{
+    content:"";
+    position:absolute;
+    width:450px;
+    height:450px;
+    background:#06b6d4;
+    filter:blur(180px);
+    opacity:0.4;
+    border-radius:50%;
+    bottom:-150px;
+    right:-120px;
+}
+
+/* ================= NAVBAR ================= */
+
+.navbar{
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    position:absolute;
+    top:30px;
+    left:0;
+    padding:0 8%;
+    z-index:10;
+}
+
+.logo{
+    color:white;
+    font-size:1.7rem;
+    font-weight:700;
+    font-family:'Poppins', sans-serif;
+}
+
+.logo i{
+    color:#8b5cf6;
+}
+
+/* ================= LOGIN LINK ================= */
+
+.login-link{
+    text-decoration:none;
+    color:white;
+    background:rgba(255,255,255,0.08);
+    border:1px solid rgba(255,255,255,0.1);
+    padding:14px 28px;
+    border-radius:50px;
+    backdrop-filter:blur(10px);
+    transition:0.4s;
+    font-weight:600;
+}
+
+.login-link:hover{
+    transform:translateY(-5px);
+    background:#8b5cf6;
+}
+
+/* ================= HERO CONTENT ================= */
+
+.hero-content{
+    max-width:850px;
+    text-align:center;
+    z-index:10;
+}
+
+.hero-content h1{
+    color:white;
+    font-size:5rem;
+    line-height:1.1;
+    margin-bottom:30px;
+    font-family:'Poppins', sans-serif;
+}
+
+.hero-content p{
+    color:#cbd5e1;
+    font-size:1.2rem;
+    line-height:1.8;
+    margin-bottom:45px;
+}
+
+/* ================= REGISTER LINK ================= */
+
+.register-link{
+    display:inline-flex;
+    align-items:center;
+    gap:12px;
+    text-decoration:none;
+    padding:18px 38px;
+    border-radius:50px;
+    background:linear-gradient(135deg,#8b5cf6,#06b6d4);
+    color:white;
+    font-size:1rem;
+    font-weight:600;
+    transition:0.4s;
+    box-shadow:0 0 30px rgba(139,92,246,0.5);
+}
+
+.register-link:hover{
+    transform:translateY(-8px) scale(1.03);
+    box-shadow:0 0 40px rgba(139,92,246,0.8);
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:900px){
+
+    .hero-content h1{
+        font-size:3.8rem;
+    }
+
+    .hero-content p{
+        font-size:1rem;
+    }
+}
+
+@media(max-width:600px){
+
+    .navbar{
+        padding:0 5%;
+    }
+
+    .logo{
+        font-size:1.2rem;
+    }
+
+    .login-link{
+        padding:12px 18px;
+        font-size:0.9rem;
+    }
+
+    .hero-content h1{
+        font-size:2.7rem;
+    }
+
+    .hero-content p{
+        font-size:0.95rem;
+    }
+
+    .register-link{
+        width:100%;
+        justify-content:center;
+    }
+}

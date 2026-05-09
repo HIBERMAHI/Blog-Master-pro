@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login</title>
+
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <link rel="stylesheet" href="/css/login.css">
+</head>
+<body>
+
+  <div class="container">
+
+    <div class="form-box">
+
+      <!-- Welcome Text -->
+      <div class="welcome-text">
+        <h2><i class="fas fa-hand-wave"></i> Welcome Back</h2>
+        <p>We’re happy to see you again. Login to continue managing your system smoothly.</p>
+      </div>
+
+      <form action="/login" method="POST">
+
+        <!-- Email -->
+        <div class="input-box">
+          <label>Email</label>
+          <div class="input-icon">
+            <i class="fas fa-envelope"></i>
+            <input type="email" name="email" placeholder="Enter email" required>
+          </div>
+        </div>
+
+        <!-- Password -->
+        <div class="input-box">
+          <label>Password</label>
+          <div class="input-icon">
+            <i class="fas fa-lock"></i>
+            <input type="password" name="password" placeholder="Enter password" required>
+          </div>
+        </div>
+
+        <button type="submit">
+          <i class="fas fa-right-to-bracket"></i> Login
+        </button>
+
+      </form>
+
+      <p>Don't have an account? <a href="/register">Register</a></p>
+
+    </div>
+
+  </div>
+
+</body>
+</html>

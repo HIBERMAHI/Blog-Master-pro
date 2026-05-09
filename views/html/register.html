@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Register - Blog Master Pro</title>
+
+  <!-- Link CSS file -->
+  <link rel="stylesheet" href="register.css">
+</head>
+
+<body>
+
+  <div class="card">
+
+    <div class="header">
+      <h1>Create Your Account</h1>
+      <p>Join Blog Master Pro and start writing and managing blogs easily</p>
+    </div>
+
+    <form action="/register" method="POST">
+
+      <label>First Name</label>
+      <input type="text" name="firstName" required>
+
+      <label>Last Name</label>
+      <input type="text" name="lastName" required>
+
+      <label>Email Address</label>
+      <input type="email" name="email" required>
+
+      <label>Password</label>
+      <input type="password" name="password" required>
+
+      <button type="submit">Sign Up</button>
+
+    </form>
+
+    <div class="footer">
+      Already have an account?
+      <a href="/login">Sign in</a>
+    </div>
+
+  </div>
+
+</body>
+</html>

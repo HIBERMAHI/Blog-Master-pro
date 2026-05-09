@@ -1,0 +1,124 @@
+/* Background */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  background: linear-gradient(135deg, #06142e, #0b2a5b);
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Container */
+.container {
+  width: 100%;
+  max-width: 450px;
+}
+
+/* Card */
+.card {
+  background: #0f1f3a;
+  padding: 30px;
+  border-radius: 14px;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.5);
+  color: #fff;
+  margin:100px 0;
+}
+
+/* Header */
+.header h1 {
+  text-align: center;
+  margin-bottom: 5px;
+  color: #ffffff;
+}
+
+.header p {
+  text-align: center;
+  font-size: 13px;
+  color: #b8c7e0;
+  margin-bottom: 25px;
+}
+
+/* Form Group */
+.form-group {
+  margin-bottom: 18px;
+  position: relative;
+}
+
+/* Labels */
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 13px;
+  color: #cfd9ff;
+}
+
+/* Input Fields */
+input {
+  width: 100%;
+  padding: 12px 12px 12px 40px; /* LEFT space for icon */
+  border: none;
+  border-radius: 8px;
+  background: #142a52;
+  color: #fff;
+  outline: none;
+  transition: 0.3s;
+  box-sizing: border-box;
+}
+
+/* Focus Effect */
+input:focus {
+  background: #183463;
+  box-shadow: 0 0 8px rgba(0, 140, 255, 0.6);
+}
+
+/* Placeholder */
+input::placeholder {
+  color: #9bb0d1;
+}
+
+/* Font Awesome Icons inside input */
+.form-group i {
+  position: absolute;
+  left: 12px;
+  top: 38px;
+  color: #6fa8ff;
+  font-size: 14px;
+}
+
+/* Button */
+button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: #1e90ff;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: 10px;
+}
+
+button:hover {
+  background: #0d6efd;
+  transform: translateY(-2px);
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 13px;
+  color: #b8c7e0;
+}
+
+.footer a {
+  color: #4da3ff;
+  text-decoration: none;
+  margin-left: 5px;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}

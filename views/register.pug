@@ -1,0 +1,50 @@
+doctype html
+html
+  head
+    meta(charset='UTF-8')
+    title Register - Blog Master Pro
+    link(rel='stylesheet' href='/css/register.css')
+
+  body
+    .container
+      .card
+
+        .header
+          h1 Create Your Account
+          p Join Blog Master Pro and start writing and managing blogs easily
+
+        form(action='/register' method='POST')
+
+          
+          .form-group
+            i.fas.fa-id-card
+            label First Name
+            input(type='text' name='firstName' placeholder='Enter first name' required)
+
+          .form-group
+            i.fas.fa-user-tag
+            label Last Name
+            input(type='text' name='lastName' placeholder='Enter last name' required)
+
+          .form-group
+            i.fas.fa-envelope
+            label Email Address
+            input(type='email' name='email' placeholder='Enter email' required)
+
+          .form-group
+            i.fas.fa-lock
+            label Password
+            input(type='password' name='password' placeholder='Enter password' required)
+
+          .form-group
+            i.fas.fa-users
+            label User Role
+            select(name='role' required)
+              option(value='user') User
+              option(value='admin') Admin
+
+          button(type='submit') Sign Up
+
+        .footer
+          | Already have an account?
+          a(href='/login') Sign in
